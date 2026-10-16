@@ -1,0 +1,10 @@
+MEIN ERNÄHRUNGSTAGEBUCH – iPhone PWA
+
+1. Die Dateien dieses Ordners gemeinsam auf einem HTTPS-Webserver bereitstellen (z.B. GitHub Pages). Nur eine lokal geöffnete HTML-Datei reicht für eine verlässlich installierbare PWA nicht aus.
+2. Die HTTPS-Adresse auf dem iPhone in Safari öffnen.
+3. Safari: Teilen > Zum Home-Bildschirm > Hinzufügen.
+4. Einmal bei bestehender Internetverbindung starten und vollständig laden. Danach funktioniert die App bei vorhandenem Service-Worker-Cache offline.
+
+DATENSCHUTZ: App-Code enthält keine externe Datenübertragung. Beim ersten Abruf sieht der Hostinganbieter technisch übliche Verbindungsdaten (z.B. IP-Adresse). Mahlzeiten/Gewicht werden in localStorage, Fotos in IndexedDB auf dem iPhone gespeichert. Der Speicher ist nicht zusätzlich Ende-zu-Ende-verschlüsselt. Browser-/Website-Daten löschen oder App entfernen kann Einträge und Fotos vernichten. Es gibt noch keinen Backup/Restore-Export. Bitte zunächst keine unersetzlichen persönlichen Fotos speichern.
+
+HINWEIS: Es ist ein PWA-Paket, keine native .ipa-Datei. Die App wurde hier nicht auf einem iPhone getestet.
